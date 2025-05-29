@@ -13,6 +13,7 @@ class player:
         # frect = img.get_frect(center = (screenWidth/2,screenHight/2))
         self.frect = self.img.get_frect(center = (x,y))
         self.rb = 1
+        self.speed = 300
         # x_pos = 0
         # y_pos = 0    
 
@@ -37,8 +38,10 @@ class player:
 
 class star:
     img = pygame.image.load('images/star.png').convert_alpha()
-    # for i in range(20):
-    #     x_pos = random.randint(0,1250)
-    #     y_pos = random.randint(0,700)
+
+class laser:
+    def __init__(self,x,y) -> None:
+        self.img = pygame.image.load('images/laser.png').convert_alpha()
+        self.frect = self.img.get_frect(center = (x,y))
 
 # import main
