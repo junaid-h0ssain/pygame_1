@@ -41,12 +41,9 @@ while run:
         # screen.blit(star.img,(random.randint(0,1250),random.randint(0,700)))
         screen.blit(star.img,(sposx[i],sposy[i]))
 
-
     screen.blit(p1.img,p1.frect)
     shoot(p1.frect.centerx,p1.frect.centery-64)
-    
-    
-            
+           
     pygame.display.update()
     
 
